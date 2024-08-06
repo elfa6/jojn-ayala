@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+}
+
+li, a, button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #949494;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    position: sticky;
+    background-color: #111111;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 19px;
+    color: #f2f2f2;
+    list-style: none;
+}
+
+span {
+    color: #db2726;
+}
+
+.nav_links {
+    list-style: none;
+    background-color: #111111;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+    background-color: #111111;
+
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #db2726;
+}
+
+.red_btn {
+    padding: 12px 26px;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(#db2726, #111111);
+    color: #f2f2f2;
+    border-radius: 100px;
+    border:1px solid #111111;
+    border-bottom: 3px solid #db2726;
+    /* border-image: linear-gradient(transparent, #ff5055); */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.red_btn:hover {
+    opacity: 0.8;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage {
+    margin-top: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 42%;
+    left: 36%;
+    transform: translate(-30%, -30%);
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    letter-spacing: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    transition: .5s;
+    color: red;
+}
+
+h1::after {
+    content: attr(data-title);
+    position: absolute;
+    top: -2.5px;
+    left: 2.5px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+    color: #ffffff;
+    transition: .5s;
+}
+
+h1:hover::after {
+    top: -8px;
+}
+
+.hero-text {
+    text-transform: uppercase;
+    color: #949494;
+    text-align: center;
+    margin: 445px 60px 0 60px;
+    font-size: 16px;
+}
+
+.mywork {
+    margin: -360px 0 0 0;
+}
+
+.s2-heading {
+    margin-left: 60px;
+    margin-bottom: 26px;
+    font-size: 26px;
+}
+
+.tiles {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.tile {
+    float: left;
+    width: 47.5%;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 36px;
+}
+
+#about {
+    background-image: linear-gradient(#db2726, #111111);
+    padding: 60px;
+}
+
+.about-me {
+    width: 48%;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+.about-para {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 26px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    opacity: 0.9;
+}
+
+.resume {
+    padding: 15px 34px;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(#e0e0e0, #e0e0e0, #111111);
+    color: #111111;
+    border-radius: 100px;
+    border:1px solid #111111;
+    border-bottom: 3px solid #e0e0e0;
+    /* border-image: linear-gradient(transparent, #ff5055); */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 5px;
+}
+
+.resume:hover {
+    opacity: 0.8;
+}
+
+.photo {
+    max-width: 45%;
+    float: right;
+    margin-top: -45px;
+}
+
+footer {
+    padding: 60px;
+}
+
+.footer-2 {
+    float: right;
+    margin-top: -200px;
+    font-size: larger;
+    margin-right: 120px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.email {
+    margin-bottom: 8px;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+.footer-text {
+    font-size: 36px;
+    font-family: sans-serif;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.footer-cta {
+    margin-left: -30px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: -30px;
+    opacity: 0.7;
+    margin-top: 30px;
+}
